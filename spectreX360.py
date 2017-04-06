@@ -121,7 +121,7 @@ class SpectreX360Daemon():
 		subprocess.call(["dconf", "write", "/com/canonical/unity/interface/text-scale-factor", val])
 
 	def setUnityWindowScale(self,factor):
-		val = "{{'HDMI-1': 8, 'eDP-1': {:d}}}".format(factor)
+		val = "{{'HDMI-1': 8, 'DP-1': 8, 'eDP-1': {:d}}}".format(factor)
 		subprocess.call(["dconf", "write", "/com/ubuntu/user-interface/scale-factor", val])
 	
 	def switchMode(self):
