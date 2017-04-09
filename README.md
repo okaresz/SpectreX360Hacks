@@ -1,7 +1,19 @@
 SpectreX360 hacks
 ===========================
 
-A python3 (not yet daemon) script to enhance user experience on HP Spectre x360 under Ubuntu 16.10.
+A python3 (not yet daemon) script to enhance user experience on HP Spectre x360 (skylake) under Ubuntu 16.10.
+
+Features
+--------------------------
+- "stance" detection
+  - detect if if lid is rotated to tablet mode ("tablet stance")
+  - detect if an external display is connected ("docked stance")
+  - otherwise assume "laptop stance"
+- react to stance change:
+  - disable trackpad in tablet mode
+  - change text scaling and "menu" scaling of Unity
+  - start/stop onboard (on-screen-keyboard)
+  - start/stop ScreenToolsSysIndicator
 
 
 Dependencies
